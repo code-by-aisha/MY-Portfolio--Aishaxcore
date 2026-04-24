@@ -1,0 +1,371 @@
+/* ========================================
+   RESET & BASE
+   ======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+html {
+  overflow-x: hidden !important;
+  width: 100%;
+}
+/* Smooth Scrolling for the entire page */
+/* ========================================
+   ULTRA SMOOTH SCROLLING
+   ======================================== */
+
+/* Smooth scroll behavior for the entire page */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* For Webkit browsers (Chrome, Safari, Edge) - smoother scrolling */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Custom smooth scroll with easing */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Smooth scrolling for all anchor links */
+a[href^="#"] {
+  scroll-behavior: smooth;
+  transition: all 0.3s ease;
+}
+
+/* Improve scroll performance */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Smooth section transitions */
+section {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Scroll padding for fixed header */
+*:target {
+  scroll-margin-top: 80px;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+  .mobile-nav a {
+    font-size: 1.2rem;
+    opacity: 0;
+    transform: translateX(30px);
+    animation: slideIn 0.3s ease forwards;
+  }
+  
+  .mobile-nav a:nth-child(1) { animation-delay: 0.05s; }
+  .mobile-nav a:nth-child(2) { animation-delay: 0.1s; }
+  .mobile-nav a:nth-child(3) { animation-delay: 0.15s; }
+  .mobile-nav a:nth-child(4) { animation-delay: 0.2s; }
+  .mobile-nav a:nth-child(5) { animation-delay: 0.25s; }
+  .mobile-nav a:nth-child(6) { animation-delay: 0.3s; }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+body {
+  background: #000000;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #ffffff;
+  overflow-x: hidden !important;
+  width: 100%;
+  position: relative;
+}
+
+#root {
+  overflow-x: hidden !important;
+  width: 100%;
+  position: relative;
+}
+
+.app {
+  position: relative;
+  z-index: 2;
+  overflow-x: hidden !important;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* ========================================
+   CONTAINER STYLES
+   ======================================== */
+
+.section-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .section-container {
+    padding: 0 24px;
+  }
+}
+
+/* ========================================
+   SECTION TITLES
+   ======================================== */
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+}
+
+/* ========================================
+   GRADIENT TEXT UTILITY
+   ======================================== */
+
+.gradient-text {
+  background: linear-gradient(135deg, #FFFFFF 0%, #c084fc 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ========================================
+   BUTTON STYLES
+   ======================================== */
+
+.btn-primary {
+  background: white;
+  color: black;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(255, 255, 255, 0.2);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 14px 32px;
+  border-radius: 40px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: white;
+  transform: translateY(-3px);
+}
+
+/* ========================================
+   PROGRESS BAR
+   ======================================== */
+
+.progress-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.05);
+  z-index: 1000;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #c084fc, #a855f7);
+  width: 0%;
+  transition: width 0.1s ease;
+  box-shadow: 0 0 10px rgba(192, 132, 252, 0.5);
+}
+
+/* ========================================
+   FOOTER STYLES
+   ======================================== */
+
+.footer {
+  padding: 60px 0 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: #000000;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.footer-content {
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+
+.footer::before {
+  content: "Aishaxcore";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+  font-size: clamp(48px, 12vw, 220px);
+  font-weight: 900;
+  color: rgba(255,255,255,0.03);
+  letter-spacing: -0.02em;
+  pointer-events: none;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-logo span {
+  background: linear-gradient(135deg, #c084fc, #a855f7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.footer p {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #c084fc;
+}
+
+/* ========================================
+   CUSTOM SCROLLBAR - Only ONE
+   ======================================== */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c084fc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a855f7;
+}
+
+/* ========================================
+   SELECTION COLOR
+   ======================================== */
+
+::selection {
+  background: rgba(192, 132, 252, 0.3);
+  color: #ffffff;
+}
+
+/* ========================================
+   EXPERIENCE & SERVICES CARDS - FIX SCROLL
+   ======================================== */
+/* 
+.exp-card,
+.service-card,
+.experience-list,
+.services-grid {
+  overflow-x: visible !important;
+  overflow-y: visible !important;
+} */
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+  .footer-links {
+    gap: 16px;
+  }
+  .footer-links a {
+    font-size: 0.7rem;
+  }
+  .btn-primary, .btn-outline {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Services Section Fix */
+#services {
+  background: #000000;
+  width: 100%;
+  position: relative;
+}
+
+#services > div {
+  pointer-events: auto;
+}
+
+
