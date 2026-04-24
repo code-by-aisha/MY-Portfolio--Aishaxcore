@@ -7,9 +7,8 @@ const About = () => {
   const statsRef = useRef([]);
 
   const stats = [
-    { value: 50, suffix: '+', label: 'Projects Delivered', icon: '🏆' },
+    { value: 30, suffix: '+', label: 'Projects Created', icon: '🏆' },
     { value: 3, suffix: '+', label: 'Years Experience', icon: '⚡' },
-    { value: 100, suffix: '%', label: 'Client Love', icon: '💜' }
   ];
 
   useEffect(() => {
