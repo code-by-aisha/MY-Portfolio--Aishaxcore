@@ -8,7 +8,7 @@ A modern, responsive portfolio website built to showcase my work, skills, and ex
 
 ---
 
-## 🧑‍💻 About This Project
+## About This Project
 
 This portfolio highlights my journey from content creation and UI/UX design to frontend development, while I continue growing into full-stack development.
 
