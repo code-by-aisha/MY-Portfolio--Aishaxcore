@@ -4,7 +4,7 @@ A modern, responsive portfolio website built to showcase my work, skills, and ex
 
 ## 🚀 Live Demo
 
-🔗 https://your-username.github.io/portfolio
+🔗https://my-portfolio-aishaxcore-qs2d.vercel.app/ 
 
 ---
 
