@@ -1,16 +1,82 @@
-# React + Vite
+# 🌐 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built to showcase my work, skills, and experience as a developer and designer.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 https://your-username.github.io/portfolio
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧑‍💻 About This Project
 
-## Expanding the ESLint configuration
+This portfolio highlights my journey from content creation and UI/UX design to frontend development, while I continue growing into full-stack development.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The goal of this project was to build a clean, interactive, and visually engaging website with smooth animations and a premium user experience.
+
+---
+
+## ✨ Features
+
+* Modern dark UI (black, white, purple theme)
+* Smooth animations using GSAP
+* Responsive design for all devices
+* Interactive project showcase
+* Experience section with animated cards
+* Clean and minimal layout
+
+---
+
+## 🛠️ Tech Stack
+
+* HTML5
+* CSS3
+* JavaScript (ES6+)
+* GSAP (Scroll animations)
+* Three.js (background effects)
+* Vite (development & build tool)
+
+---
+
+## 📂 Project Structure
+
+portfolio/
+├── index.html
+├── package.json
+├── /Public
+│   ├──Images
+│   ├── sounds
+├── /src
+├── /Components 
+...
+│   ├── main.js
+│   ├── App.jsx
+│   ├── index.html
+│   ├── index.css
+│   └── assets/
+...
+---
+
+## 📸 Sections Included
+
+* Hero Section
+* About Me
+* Selected Work (Projects + UI/UX)
+* Experience & Growth
+* Contact
+
+
+---
+
+## 💡 Future Improvements
+
+* Add more backend projects (MERN stack)
+* Improve performance and accessibility
+* Add blog or LinkedIn integration section
+
+---
+
+## ⭐ Show your support
+
+If you like this project, consider giving it a star ⭐ on GitHub!
+
