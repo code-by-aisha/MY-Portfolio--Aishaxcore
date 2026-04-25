@@ -7,8 +7,7 @@ const Hero = () => {
   const canvasRef = useRef(null);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const words = [
-    "innovation",
+  const words = 
     "results",
     "success",
     "solutions",
@@ -278,13 +277,14 @@ useEffect(() => {
               <span>✦ Frontend Developer & UI/UX Designer ✦</span>
             </div>
 
-            <h1 className="hero-title">
-              Turning pixels into{" "}
-              <span className="dynamic-word">
-                {displayWord || words[0]}
-                <span className="typing-cursor"></span>
-              </span>
-            </h1>
+          <h1 className="hero-title">
+  Turning pixels into
+  <br />
+  <span className="dynamic-word">
+    {displayWord || words[0]}
+    <span className="typing-cursor"></span>
+  </span>
+</h1>
 
             <p className="hero-description">
               Just building cool, clean websites that people enjoy using.
@@ -551,6 +551,20 @@ useEffect(() => {
   
   .btn-group {
     gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.8rem !important;
+    line-height: 1.3;
+    text-align: center;
+  }
+  
+  .dynamic-word {
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-top: 5px;
   }
 }
 
