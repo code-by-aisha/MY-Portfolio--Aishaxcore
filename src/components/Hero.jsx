@@ -243,7 +243,6 @@ useEffect(() => {
         overflow: "hidden",
       }}
     >
-      {/* Particle Network Canvas - Higher Opacity */}
       {/* Particle Network Canvas - Responsive */}
 <canvas 
   ref={canvasRef} 
